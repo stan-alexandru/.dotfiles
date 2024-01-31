@@ -5,7 +5,7 @@ return {
 		config = function()
 			local config = require("nvim-treesitter.configs")
 			config.setup({
-				ensure_installed = { "astro", "css", "html", "javascript", "json", "lua", "sql", "typescript" },
+				ensure_installed = { "astro", "css", "html", "javascript", "typescript" },
 				auto_install = true,
 				highlight = { enable = true },
 				indent = { enable = true },
