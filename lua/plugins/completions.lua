@@ -33,6 +33,8 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
 				}),
 				sources = cmp.config.sources({
+					{ name = "dotenv" },
+					{ name = 'async_path' },
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
 				}, {

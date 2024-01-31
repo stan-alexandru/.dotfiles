@@ -2,14 +2,13 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- Make space as your leader
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
-
-
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
 
 -- Set highlight on search
 vim.o.hlsearch = false
