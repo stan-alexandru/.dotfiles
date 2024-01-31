@@ -11,6 +11,13 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
+		dependencies = {
+			'neovim/nvim-lspconfig',
+			'hrsh7th/cmp-buffer',
+			'hrsh7th/cmp-path',
+			'hrsh7th/cmp-cmdline',
+			'SergioRibera/cmp-dotenv'
+		},
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
@@ -34,11 +41,10 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "dotenv" },
-					{ name = 'async_path' },
-					{ name = "nvim_lsp" },
-					{ name = "luasnip" }, -- For luasnip users.
-				}, {
+					{ name = 'path' },
 					{ name = "buffer" },
+					{ name = "nvim_lsp" },
+					{ name = "luasnip" }
 				}),
 			})
 		end,
