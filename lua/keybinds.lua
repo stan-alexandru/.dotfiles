@@ -33,3 +33,7 @@ vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, { desc = "Find Fi
 vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, { desc = 'Buffers' })
 vim.keymap.set('n', '<leader>fk', telescope_builtin.keymaps, { desc = '[f]ind [k]eymaps' })
 
+-- NeoTree
+vim.keymap.set('n', '<leader>e', ":NvimTreeToggle <CR>", { desc = 'File tree' }, { silent = true })
+vim.keymap.set('n', '<leader>e', ":NvimTreeFocus <CR>", { desc = 'Git file tree' }, { silent = true })
+vim.keymap.set('n', '<leader>q', ":NvimTreeClose<cr>", { desc = 'Buffer file tree' }, { silent = true })
