@@ -27,7 +27,7 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Sav
 local telescope_builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, { desc = '[f]ind [f]iles' })
 vim.keymap.set('n', '<leader>gf', telescope_builtin.git_files, { desc = '[G]it [F]iles' })
-vim.keymap.set('n', '<leader><space>', telescope_builtin.live_grep, { desc = "Find Files (root dir)" })
+vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, { desc = "Find Files (root dir)" })
 
 -- Telescope buffer
 vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, { desc = 'Buffers' })
